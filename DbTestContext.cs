@@ -7,7 +7,7 @@ namespace TestWebApp
 {
     public class DbTestContext : DbContext
     {
-        DbTestContext(DbContextOptions<DbTestContext> options) : base(options) { }
+        public DbTestContext(DbContextOptions<DbTestContext> options) : base(options) { }
 
         public DbSet<Product> Products { get; set; }
 

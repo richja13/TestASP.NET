@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LrxkuXkJSox8QuA5I9eM4mOw5JCNHqCQZipDW+xitKGmB5y9HS4oPumRslfCiL87JlX0byn0gukopF2+vMhoXg==",
+  "dgSpecHash": "d4M+CYR3+VwyMdzYN/UE5uR3Df0SpWNnRoAs23EIik1EKusM33szV6pDtU164mUEzM2RF4iQ/JXHoEkbHpRGyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\xmadi\\source\\repos\\TestWebApp\\TestWebApp.csproj",
   "expectedPackageFiles": [
@@ -79,8 +79,10 @@
     "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.22\\microsoft.entityframeworkcore.6.0.22.nupkg.sha512",
     "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.22\\microsoft.entityframeworkcore.abstractions.6.0.22.nupkg.sha512",
     "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.22\\microsoft.entityframeworkcore.analyzers.6.0.22.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.22\\microsoft.entityframeworkcore.design.6.0.22.nupkg.sha512",
     "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.22\\microsoft.entityframeworkcore.relational.6.0.22.nupkg.sha512",
     "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.22\\microsoft.entityframeworkcore.sqlserver.6.0.22.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.22\\microsoft.entityframeworkcore.tools.6.0.22.nupkg.sha512",
     "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\xmadi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

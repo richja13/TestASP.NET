@@ -8,9 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IWarehouseService, WarehouseService>();
+
 builder.Services.AddDbContext<DbTestContext>(builder =>
 {
-    builder.UseSqlServer("Data Source=;Initial Catalog=; Integrated Security=True");
+    builder.UseSqlServer(@"Data Source=(localdb)\LocalDataBase;Initial Catalog=DbTest; Integrated Security=True");
 });
 
 var app = builder.Build();

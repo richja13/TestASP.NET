@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TestWebApp.Models;
+using TestWebApp.Services.Interfaces;
 
 namespace TestWebApp.Controllers
 {
@@ -9,6 +10,14 @@ namespace TestWebApp.Controllers
         {
             return View();
         }
+
+        private readonly IWarehouseService _warehouseService;
+
+        public ProductController(IWarehouseService warehouseService)
+        {
+            _warehouseService = warehouseService;
+        }
+
 
         public IActionResult Product()
         {
@@ -26,33 +35,7 @@ namespace TestWebApp.Controllers
 
         public IActionResult List()
         {
-            var productList = new List<Product>
-            {
-                new Product
-                {
-                    Id=1,
-                    Category = "Samochod",
-                    Description = "To jest super samochod",
-                    Name = "BMW M5"
-                },
-
-                new Product
-                {
-                    Id=2,
-                    Category = "Napoje",
-                    Description = "To opis napoju",
-                    Name = "Cola"
-                },
-
-                new Product
-                {
-                    Id=3,
-                    Category = "Gra",
-                    Description = "To jest super gra",
-                    Name = "Cyberpunk"
-                },
-            };
-
+            var productList = _warehouseService.GetAll();
             return View(productList);
         }
 
