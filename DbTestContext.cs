@@ -1,11 +1,12 @@
 ﻿
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore;
 using TestWebApp.Models;
 
 namespace TestWebApp
 {
-    public class DbTestContext : DbContext
+    public class DbTestContext : IdentityDbContext<UserModel>
     {
         public DbTestContext(DbContextOptions<DbTestContext> options) : base(options) { }
 

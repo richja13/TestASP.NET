@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TestWebApp.Models;
 using TestWebApp.Services;
 using TestWebApp.Services.Interfaces;
 
 namespace TestWebApp.Controllers
 {
+    [Authorize]
+
     public class WarehouseController : Controller
     {
         private readonly IWarehouseService _warehouseService;
