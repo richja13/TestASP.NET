@@ -1,0 +1,11 @@
+﻿@model TestWebApp.Models.Product
+
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Formularz dodający produkt do magazynu</h1>
+
+@Html.Partial("_AddProductForm", Model)
+
+<p>ID po zapisie(TempData): <strong>@TempData["ProductId"]</strong></p>
