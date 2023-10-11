@@ -9,6 +9,8 @@ namespace TestWebApp.Controllers
         private readonly UserManager<UserModel> _userManager;
         private readonly SignInManager<UserModel> _signInManager;
 
+        string Error = "";
+
         public AccountController(UserManager<UserModel> userManager, SignInManager<UserModel> signInManager)
         {
             _userManager = userManager;
@@ -28,9 +30,22 @@ namespace TestWebApp.Controllers
             {
                 return View(userLoginData);
             }
-            await _signInManager.PasswordSignInAsync(userLoginData.UserName, userLoginData.Password, false, false);
 
-            return RedirectToAction("Index", "Home");
+
+            var result = await _signInManager.PasswordSignInAsync(userLoginData.UserName, userLoginData.Password, false, false);
+
+            if (result.Succeeded)
+            {
+                Error = " ";
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                Error = "Hasło lub nazwa użytkownika nieprawidłowa";
+                ViewData["Error"] = Error;
+                return View();
+            }
+           
         }
 
         [HttpGet]

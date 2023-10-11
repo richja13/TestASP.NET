@@ -6,8 +6,11 @@
 {
     @Html.ValidationSummary()
     ;
-    <span>Login: </span> @Html.TextBoxFor(x => x.UserName)
-    <span>Password: </span> @Html.PasswordFor(x => x.Password)
+    <span>Login: </span> @Html.TextBoxFor(x => x.UserName)<br>
+    <span>Password: </span> @Html.PasswordFor(x => x.Password)<br>
 
     <button type="submit">Zaloguj</button>
+    <br>
 }
+
+<p>@ViewData["Error"]</p>

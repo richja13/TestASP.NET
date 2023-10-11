@@ -1,11 +1,14 @@
 ﻿@model IEnumerable<TestWebApp.Models.Product>
+<link rel="stylesheet" type="text/css" href="ListStyle.css"/>
 <h1>Lista produktow</h1>
 
 <ol>
     @foreach(var product in Model)
     {
-        <li><b>@product.Name</b> - @product.Category - 
-            <a href="@Url.Action("Details","Warehouse", new{Id = product.Id})">Szczegoly</a>
+        <li>
+            <img src="@product.ImageUrl" width="120" alt="Product image" /><br>
+            <b>@product.Name</b> - @product.Category - <br>
+            <a href="@Url.Action("Details","Warehouse", new{Id = product.Id})">Szczegoly</a><br>
             @using (Html.BeginForm("Delete", "Warehouse", FormMethod.Post))
             {
                 <input type="hidden" name="Id" value="@product.Id"/>

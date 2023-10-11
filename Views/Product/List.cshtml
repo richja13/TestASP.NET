@@ -10,7 +10,7 @@
 
     @foreach(var product in Model)
     {
-        <li>@product.Category - @product.Name - @product.Id</li>
+        <li><img src="http://animal.discovery.com/mammals/cheetah/pictures/cheetah-picture.jpg" alt="Product image" /> @product.Category - @product.Name - @product.Id</li>
     }
 </ul>
 
@@ -22,7 +22,7 @@
     {
         if (product.Category == "Samochod")
         {
-            <li>@product.Category - @product.Name - @product.Id</li>
+            <li><img src="http://animal.discovery.com/mammals/cheetah/pictures/cheetah-picture.jpg" alt="Product image" /> @product.Category - @product.Name - @product.Id</li>
         }
     }
 </ul>

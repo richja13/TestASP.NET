@@ -15,6 +15,9 @@ namespace TestWebApp.Models
         
         [Required]
         public string Category { get; set; }
+
+        [Required]
+        public string ImageUrl { get; set; }
        
     }
 }

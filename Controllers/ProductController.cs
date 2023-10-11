@@ -27,6 +27,7 @@ namespace TestWebApp.Controllers
                 Category = "Samochod",
                 Description = "To jest super samochod",
                 Name = "BMW M5",
+                ImageUrl = "https://ocdn.eu/pulscms-transforms/1/0bLk9kqTURBXy9iYTdiMWMxNDYzODVlMWUzYTNmZWEyMTQ0YTE5NDBiZC5qcGVnkpUDJAHNBwfNA_STBc0EsM0CpN4AAqEwAaExAA"
             };
 
             return View(product);
